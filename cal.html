@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html ang="en">
+<head>
+<body>
+    <input type="text" name=""
+    id="name1" placeholder="Enter your name">
+    <input type="text" name=""
+    id="name2" placeholder="Enter his/her name">
+    <button onclick="cal()">Submit</button>
+    <h1 id="res">Result</h1>
+    <script>
+        function cal(){
+            var name1= document.getElementById("name1").value;
+            var name2= document.getElementById("name2").value;
+            var per = Math.floor(Math.random()*101);
+            var res = document.getElementById("res");
+
+            res.innerHTML= "Love between"+" "
+            +name1+" "+"and"+" "+name2+" "+"is"+" "+per+"%"
+        }
+        
+    </script>
+</body>
+</head>    
+
